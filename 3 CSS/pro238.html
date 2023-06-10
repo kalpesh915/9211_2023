@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 80%;
+            background-color: lightgray;
+            margin: auto;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        input[type="email"], input[type="password"]{
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-top: 5px;
+            /* background-color: orangered;
+            color: white; */
+        }
+
+        input[type="email"]:focus, input[type="password"]:focus{
+            outline: none;
+            border: 3px solid green;
+        }
+
+        input[type="submit"]{
+            background-color: green;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            border: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="email" placeholder="Enter Email Address">
+        <input type="password" placeholder="Enter Password">
+        <input type="submit" value="Send Data">
+    </form>
+</body>
+</html>

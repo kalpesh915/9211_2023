@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: white;
+        }
+
+        .header, .footer{
+            background-color: gray;
+            color: white;
+            padding: 15px;
+        }
+
+        .column{
+            float: left;
+            padding: 15px;
+        }
+
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .menu{
+            width: 20%;
+        }
+
+        .content{
+            width: 60%;
+        }
+
+        .sidebar{
+            width: 20%;
+        }
+
+        .menu ul{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .menu li{
+            padding: 10px;
+            margin-bottom: 5px;
+            background-color: blueviolet;
+            color: white;
+        }
+
+        .menu li:hover{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Website Header</h1>
+    </div>
+
+    <div class="clearfix">
+        <div class="column menu">
+            <ul>
+                <li>Krishna</li>
+                <li>Bhoomi</li>
+                <li>Sagar</li>
+                <li>Dev</li>
+                <li>Mehul</li>
+                <li>Neel</li>
+            </ul>
+        </div>
+
+        <div class="column content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita eos quis provident mollitia praesentium sunt impedit totam similique perspiciatis neque eaque tempore omnis soluta, nostrum, ipsam esse! Obcaecati, error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis sequi obcaecati. Quam dolore nulla beatae reiciendis, sit est maiores quaerat animi illo, voluptatum saepe! Inventore, praesentium. Alias, magnam officia!</p>
+        </div>
+
+        <div class="column sidebar">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ullam ut quam similique blanditiis, esse minima laboriosam. Perspiciatis quae velit reiciendis ea dolorem, nobis molestiae quas, nostrum modi nesciunt provident!</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Website Footer</p>
+    </div>
+</body>
+</html>
