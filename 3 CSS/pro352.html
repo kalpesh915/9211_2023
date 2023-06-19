@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes myAnimation {
+            0%{
+                background-color: lightgreen;
+                transform: rotate(-10deg);
+                top:0px;
+                left: 0px;
+            }
+
+            50%{
+                left: 500px;
+                transform: rotateX(0deg);
+            }
+
+            100%{
+                left: 0px;
+                transform: rotateZ(-360deg);
+            }
+        }
+
+        div{
+            width: 100px;
+            height: 40px;
+            position: relative;
+            left: 0px;
+            top: 0px;
+            background-color: brown;
+            color: white;
+            animation: myAnimation 10s;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Welcome
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+
+        .tooltip{
+            position: relative;
+            width: 200px;
+            margin: auto;
+        }
+
+        .tooltip .tooltip-text{
+            background-color: black;
+            width: 200px;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            position: absolute;
+            right: 105%;
+            top: 0%;
+            z-index: 1;
+            display: none;
+            
+        }
+
+        .tooltip:hover .tooltip-text{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="tooltip">
+        Mouse overme
+        <div class="tooltip-text">This is Tooltip text</div>
+    </div>
+</body>
+</html>

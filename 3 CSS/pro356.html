@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border: 1px dotted black;
+        }
+
+        .tooltip-text {
+            opacity: 0;
+            width: 150px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            top: -5px;
+            left: 110%;
+            transition: all 2s;
+        }
+
+        .tooltip:hover .tooltip-text{
+            opacity: 1;
+        }
+
+        .tooltip .tooltip-text::after{
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            margin-top: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent black transparent transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tooltip">
+        Mouse over me
+        <div class="tooltip-text">This is Tooltip text</div>
+    </div>
+</body>
+
+</html>
