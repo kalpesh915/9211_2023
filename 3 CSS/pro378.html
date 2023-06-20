@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position: relative;
+            width: 50%;
+        }
+
+        .image{
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: 0.5s ease;
+            backface-visibility: hidden;
+        }
+
+        .middle{
+            transition: 0.5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .text{
+            background-color: #4caf50;
+            color: white;
+            font-size: 20px;
+            padding: 16px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .container:hover img{
+            opacity: 0.3;
+        }
+
+        .container:hover .middle{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images/img_avatar.png" class="image">
+        <div class="middle">
+            <div class="text">Dev Vachhani</div>
+        </div>
+    </div>
+</body>
+</html>

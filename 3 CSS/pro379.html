@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position: relative;
+            width: 50%;
+        }
+
+        .image{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay{
+           position: absolute;
+           bottom: 0px;
+           left: 0px;
+           right: 0px;
+           background-color: #008cba;
+           overflow: hidden;
+           width: 100%;
+           height: 0px;
+           transition: 0.5s ease;
+        }
+
+        .text{
+            white-space: nowrap;
+            color: white;
+            overflow: hidden;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+            padding: 16px;
+            width: 100%;
+            text-align: center;
+            position: absolute;
+        }
+
+        .container:hover .overlay{
+            height: 100%;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images/img_avatar.png" class="image">
+        <div class="overlay">
+            <div class="text">Dev Vachhani</div>
+        </div>
+    </div>
+</body>
+</html>
