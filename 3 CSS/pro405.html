@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pagination {
+            display: inline-block;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .pagination a {
+            color: black;
+            float: left;
+            padding: 1px;
+            text-decoration: none;
+            transition: all 0.7s;
+            margin: 3px;
+        }
+
+        .pagination a::before{
+            content: " / ";
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <div class="pagination">
+            <a href="#">Home</a>
+            <a href="#">Settings</a>
+            <a href="#">Account</a>
+            <a href="#">Security</a>
+            <a href="#">Password</a>
+
+        </div>
+    </div>
+</body>
+
+</html>

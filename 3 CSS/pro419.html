@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+
+        @media screen  and (min-width:700px){
+            body{
+                background-color: burlywood;
+            }
+        }
+    </style>
+</head>
+
+<body onresize="getWidth()">
+    <h1 id="op"></h1>
+    <h1>Media Query</h1>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quis illum ut similique praesentium? Tempore perspiciatis officiis necessitatibus nisi ab officia error amet. Vero molestiae fugit quidem libero, fugiat veritatis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam natus eaque dolores quidem vero autem nihil veritatis enim laudantium. Neque quae quod veritatis maxime autem animi quibusdam sequi quis earum!
+    </div>
+</body>
+
+</html>
+
+<script>
+    function getWidth(){
+        document.getElementById("op").innerHTML = window.innerWidth;
+    }
+</script>
