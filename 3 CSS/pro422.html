@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+            width: 100%;
+            overflow: auto;
+            background-color: cadetblue;
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .navbar li{
+            display: inline;
+        }
+
+        .navbar li a{
+            display: inline-block;
+            color: white;
+            background-color: brown;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover{
+            background-color: chocolate;
+        }
+
+        @media screen and (max-width:600px){
+            .navbar li{
+                display: block;
+            }
+
+            .navbar li a {
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Feedback</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .row{
+
+        }
+
+        .row::after{
+            content: " ";
+            clear: both;
+            display: table;
+        }
+
+        .col{
+            width: 25%;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: justify;
+            float: left;
+        }
+
+        @media screen and (max-width:700px){
+            .col{
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width:500px){
+            .col{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col">Column 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe atque nulla voluptate adipisci aut. Id ea minus tenetur quia veritatis eos nam culpa itaque beatae. Aut aspernatur quaerat nostrum repellendus.</div>
+        <div class="col">Column 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reprehenderit quasi accusantium est autem quae deserunt, blanditiis nesciunt vitae similique enim voluptatem! Accusamus nihil nisi ab necessitatibus molestias dicta incidunt.</div>
+        <div class="col">Column 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quibusdam quod ipsum eveniet nostrum, deleniti vel illo nemo commodi unde repudiandae facilis et sapiente repellendus officia tempore aut sit magni.</div>
+        <div class="col">Column 4 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint placeat libero totam natus, voluptatum excepturi, non, ea officia vel est fuga. Facilis commodi vero corrupti iste illo culpa exercitationem reprehenderit?</div>
+    </div>
+</body>
+</html>
