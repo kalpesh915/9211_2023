@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+
+        .header{
+            padding: 60px;
+            text-align: center;
+            background-color: #1abc9c;
+            color: white;
+        }
+
+        .navbar{
+            display: flex;
+            background-color: #333333;
+        }
+
+        .navbar a{
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .navbar a:hover{
+            background-color: #dddddd;
+            color: black;
+        }
+
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .side{
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        .main{
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .fakeimg{
+            background-color: #aaaaaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .footer{
+            padding: 20px;
+            text-align: center;
+            background-color: #dddddd;
+        }
+
+        @media screen  and (max-width:700px){
+            .row, .navbar{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>This is Sample Website</h1>
+        <p>Using Responsive Flexbox Layout</p>
+    </div>
+
+    <div class="navbar">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 5</a>
+    </div>
+
+    <div class="row">
+        <div class="side">  
+            <h2>About Me</h2>
+            <h5>Photo</h5>
+            <div class="fakeimg" style="height: 200px;">Profile Image</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed cupiditate a consectetur distinctio necessitatibus. Animi commodi odit porro soluta tempora qui repellendus fuga vero eius ex. Iste, soluta? Necessitatibus, veritatis.</p>
+            <h3>Another Section</h3>
+            <div class="fakeimg" style="height: 60px;">Image</div><br>
+            <div class="fakeimg" style="height: 60px;">Image</div><br>
+            <div class="fakeimg" style="height: 60px;">Image</div>
+        </div>
+
+        <div class="main">
+            <h1>Title of Website</h1>
+            <p>24th June 2023 10:10:10 AM</p>
+            <div class="fakeimg" style="height: 200px;">Image</div>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores harum voluptas cumque quam? Eveniet, explicabo. Ipsa laboriosam corrupti ex necessitatibus officia molestias. Numquam perspiciatis earum accusantium, nulla autem velit facere?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores harum voluptas cumque quam? Eveniet, explicabo. Ipsa laboriosam corrupti ex necessitatibus officia molestias. Numquam perspiciatis earum accusantium, nulla autem velit facere?</p>
+            <h1>Another Section</h1>
+            <div class="fakeimg" style="height: 200px;">Image</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores harum voluptas cumque quam? Eveniet, explicabo. Ipsa laboriosam corrupti ex necessitatibus officia molestias. Numquam perspiciatis earum accusantium, nulla autem velit facere?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores harum voluptas cumque quam? Eveniet, explicabo. Ipsa laboriosam corrupti ex necessitatibus officia molestias. Numquam perspiciatis earum accusantium, nulla autem velit facere?</p>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Footer of Our Website</h2>
+    </div>
+</body>
+</html>
