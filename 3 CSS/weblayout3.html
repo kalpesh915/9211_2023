@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .row::after{
+            content: " ";
+            display: table;
+            clear: both;
+        }
+
+
+        /* Design for Mobile layout */
+        [class*="col-"]{
+            float: left;
+            padding: 20px;
+            width: 100%;
+        }
+
+        /* Layout if Screen size is > 768px */
+
+        @media screen and (min-width : 768px){
+            .col-1{width: 8.33%;}
+            .col-2{width: 16.66%;}
+            .col-3{width: 25%;}
+            .col-4{width: 33.33%;}
+            .col-5{width: 41.66%;}
+            .col-6{width: 50%;}
+            .col-7{width: 58.33%;}
+            .col-8{width: 66.66%;}
+            .col-9{width: 75%;}
+            .col-10{width: 83.33%;}
+            .col-11{width: 91.66%;}
+            .col-12{width: 100%;}
+        }
+        
+        html{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .header{
+            background-color: #9933cc;
+            color: white;
+            padding: 15px;
+        }
+
+        .menu ul{
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .menu ul li{
+            padding: 8px;
+            margin-bottom: 5px;
+            background-color: #33b5e5;
+            color: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+
+        .footer{
+            background-color: #9933cc;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        @media screen and (max-width:768px){
+            [class*="col-"]{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>IANT Rajkot</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-3 menu">
+            <ul>
+                <li>Hardware</li>
+                <li>Software</li>
+                <li>Cyber Security</li>
+                <li>Full Statck Web Development</li>
+            </ul>
+        </div>
+
+        <div class="col-9">
+            <h1>Full Stack Web Development With PHP</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi illum sunt, quisquam rerum atque quo vel magni rem mollitia ut soluta? Libero minus autem, iste perferendis eum at in consequatur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptates placeat quia vero eveniet, quas quod animi suscipit repellat? Impedit aut hic, nihil error eveniet sequi enim! Doloribus, tenetur necessitatibus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quisquam a est qui excepturi dolores voluptatibus quis doloribus nulla esse autem, facere deleniti ex ullam odio quo dolore. Quod, esse.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Designed By : DevSagar</p>
+    </div>
+</body>
+</html>
