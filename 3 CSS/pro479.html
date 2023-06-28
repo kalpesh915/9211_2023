@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .item1 {
+            grid-area: 1 / 1 / 1 / 5;
+        }
+
+        .item2 {
+            grid-area: 2 / 1 / 2 / 5;
+        }
+
+        .item3 {
+            grid-area: 3 / 1 / 3 / 2;
+        }
+
+        .item4 {
+            grid-area: 3 / 2 / 3 / 5;
+        }
+
+        .item5 {
+            grid-area: 4 / 1 / 4 / 5;
+        }
+
+        @media screen and (max-width:768px) {
+            .item3 {
+                grid-area: 3 / 1 / 3 / 5;
+            }
+
+            .item4 {
+                grid-area: 4 / 1 / 4 / 5;
+            }
+
+            .item5 {
+                grid-area: 5 / 1 / 5 / 5;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item item1">Header</div>
+        <div class="grid-item item2">Menu</div>
+        <div class="grid-item item3">Sidebar</div>
+        <div class="grid-item item4">Main</div>
+        <div class="grid-item item5">Footer</div>
+    </div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga hic rem corporis harum recusandae tenetur consequuntur
+    obcaecati sunt, veniam modi aut voluptas vel enim natus, magnam incidunt necessitatibus possimus explicabo?
+</body>
+
+</html>
