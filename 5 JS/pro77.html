@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    function toCelcius(fahrenheit){
+        // local variable ans
+        let ans = (fahrenheit -32) / 1.8 ;
+        document.write("<hr> answer is "+ans);
+    }
+
+    toCelcius(100);
+
+    // answer is local variable for toCelcius() we cannot access out side of function
+    document.write("<hr> answer is "+ans);
+</script>
