@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="images/img1.jpg" height="200" width="200" id="img1">
+    <hr>
+    <input type="range" min="100" max="500" value="200" onchange="resizeImage(this.value)">
+</body>
+</html>
+
+<script>
+    function resizeImage(size){
+        //alert(size);
+        let img1 = document.getElementById("img1");
+        img1.height = size;
+        img1.width = size;
+    }
+</script>
