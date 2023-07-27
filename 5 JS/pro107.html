@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let students = ["Mehul", "Sagar", "Mithilesh", "Dev", "Kartik", "Krishna", "Bhoomi", "Shruti", "Rachna"];
+
+    let op = `<ol>`
+        for(name of students){
+            op += `<li>${name}</li>`;
+            //op += `<li>${name.toUpperCase()}</li>`;
+        }
+    op += `</ol>`;
+
+    document.write(op);
+</script>
