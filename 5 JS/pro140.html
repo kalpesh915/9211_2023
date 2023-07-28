@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let students = ["mehul", "dev", "mithilesh", "sagar", "kartik", "krishna", "bhoomi", "shruti", "kalpesh", "karan", "radhesh", "nirali"];
+
+    document.write("<hr> Student is : " + students);
+
+    // splice (start index, how many elements to remove, new elements)
+
+    students.splice(0, 5);
+    document.write("<hr> Student is : " + students);
+    students.splice(0, 0, "menul", "dev");
+    document.write("<hr> Student is : " + students);
+    students.splice(0, 2, "mithilesh", "kartik");
+    document.write("<hr> Student is : " + students);
+</script>
