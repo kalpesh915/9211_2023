@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let marks = [88, 33, 22, 11, 44, 55, 11, 112, 119, 43, 11, 10, 34, 45, 322, 200];
+    let answer = findMaximum(marks);
+    document.write("<hr> Maximum of Array is "+answer);
+    answer = findMinumum(marks);
+    document.write("<hr> Minimum of Array is "+answer);
+    
+
+    function findMaximum(array){
+        return Math.max.apply(null, array);
+    }
+
+    function findMinumum(array){
+        return Math.min.apply(null, array);
+    }
+</script>

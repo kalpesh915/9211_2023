@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let cars = [
+        {modal : "I20", year : 2008},
+        {modal : "I10", year : 2005},
+        {modal : "Verna", year : 2000},
+        {modal : "Creta", year : 2012},
+        {modal : "Venue", year : 2018}
+    ];
+
+    document.write("<hr> Original Data is "+JSON.stringify(cars));
+    //cars = cars.sort();
+    cars = cars.sort(function(x, y){return x.year - y.year});
+    document.write("<hr> Sorterd Data is "+JSON.stringify(cars));
+</script>
