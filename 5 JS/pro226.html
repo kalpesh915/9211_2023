@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="op"></h1>    
+</body>
+</html>
+
+<script>
+    /*
+        print object with document.write()
+    */
+
+    const student = {roll : 123, fname : "Mehul", lname : "Valu", city : "Rajkot", phone : "3894723478"};
+
+    // document.write(student);
+
+    /*
+        retrive one by one values from object and store in tmp variable
+
+        for(tmp in object){
+
+        }
+    */
+
+    for(tmp in student){
+        //document.write(" "+tmp);  
+        //document.write(" "+student[tmp]);  
+        document.write(" "+tmp+" is "+student[tmp]);  
+    }
+</script>
