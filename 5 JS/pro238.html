@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let students = new Set(["Aayushi", "Bhoomi", "Mithilesh", "Sagar", "Mehul", "Sagar"]);
+
+    document.write("<hr> Size of set is "+students.size);
+    students.add("Shruti");
+    students.add("Krishna");
+    students.add("Dev");
+    document.write("<hr> Size of set is "+students.size);
+
+    document.write("<hr>");
+
+    // call a printer function on each element of students set
+    students.forEach(printer);
+    
+
+    function printer(student){
+        document.write("<hr> Welcome "+student);
+    }
+</script>

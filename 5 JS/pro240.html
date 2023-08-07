@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let students = new Set(["Aayushi", "Bhoomi", "Mithilesh", "Sagar", "Mehul", "Sagar", "Krishna", "Shruti", "Dev"]);
+
+    document.write("<hr> Size of set is "+students.size);
+    document.write("<hr> "+students.has("Krishna"));
+    students.delete("Krishna");
+    document.write("<hr> "+students.has("Krishna"));
+    students.clear();
+    document.write("<hr> Size of set is "+students.size);
+</script>

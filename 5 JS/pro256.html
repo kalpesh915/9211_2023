@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let string1 = "welcome to world of scripting with java script 2342314 2314234 1234 1234234 ";
+    document.write("<hr> original string is "+string1);
+
+    //const pattern = /\d/ig;
+    //const pattern = /\s/ig;
+    //const pattern = /\bw/ig;
+    const pattern = /d\b/ig;
+
+    document.write("<hr> Modified string is "+string1.replace(pattern, 'O'));
+</script>
