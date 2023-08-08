@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let string1 = "welcome to world of java script";
+    let pattern = /to/;
+    document.write("<hr> Orginal String is "+string1);
+    document.write("<hr> Modified String is "+ pattern.test(string1));
+    pattern = /TO/;
+    document.write("<hr> Modified String is "+ pattern.test(string1));
+    document.write("<hr> Modified String is "+ pattern.exec(string1));
+    pattern = /to/;
+    document.write("<hr> Modified String is "+ pattern.exec(string1));
+</script>

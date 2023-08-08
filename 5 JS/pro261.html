@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let string1 = "1 10 101 1010";
+    let pattern = /101+/;    
+    document.write("<hr> Orginal String is "+string1);
+    document.write("<hr> Modified string is : "+string1.replace(pattern, '-'));
+    pattern = /10*/g;    
+    document.write("<hr> Modified string is : "+string1.replace(pattern, '-'));
+    pattern = /10?/g;    
+    document.write("<hr> Modified string is : "+string1.replace(pattern, '-'));
+</script>
