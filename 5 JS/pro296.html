@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    // example of simple json data
+
+
+    const jsonData = {
+        "students" : [
+            {roll : 123, fname : "Mehul", lname : "Varu", city : 
+            "Rajkot"},
+            {roll : 124, fname : "Sagar", lname : "Patodiya", city : "Rajkot"},
+            {roll : 125, fname : "Mithilesh", lname : "Yadav", city : "Rajkot"},
+            {roll : 126, fname : "Shruti", lname : "Goswami", city : "Rajkot"},
+            {roll : 127, fname : "Krishna", lname : "Goletar", city : "Rajkot"},
+        ]
+    };
+
+    //document.write(jsonData);
+    /// JSON.stringify() is used to convert java script object to JSON string
+    let jsonString = JSON.stringify(jsonData);
+    document.write(jsonString);
+</script>
