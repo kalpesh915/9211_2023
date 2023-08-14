@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    // object and reference
+
+    const student = {
+        // property : value
+        fname : "Shruti",
+        lname : "Goswami",
+        city : "Rajkot",
+        age : 20,
+        education : "BCA"
+    }
+
+    document.write("<hr> First Name is "+student.fname);
+    let tmp = student;
+    document.write("<hr> First Name is "+tmp.fname);
+    tmp.fname = "Tarun";
+    document.write("<hr> First Name is "+tmp.fname);
+    document.write("<hr> First Name is "+student.fname);
+    let demo = student;
+    document.write("<hr> First Name is "+demo.fname);
+</script>

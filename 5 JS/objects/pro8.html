@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    // nested object
+
+    const student = {
+        // property : value
+        fname : "Shruti",
+        lname : "Goswami",
+        city : "Rajkot",
+        age : 20,
+        education : "BCA",
+        attendance : {
+            absents : 22,
+            presents : 122
+        },
+        marks : {
+            subject1 : 98,
+            subject2 : 95,
+            subject3 : 96,
+            subject4 : 99,
+            subject5 : 96,
+        }
+    }
+    
+
+    //document.write(student.attendance.presents);
+    document.write(student["attendance"]["presents"]);
+</script>
