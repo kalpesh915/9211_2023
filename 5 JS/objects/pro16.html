@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    // example of define property in object
+
+    const myCounter = {
+        counter : 0
+    };
+
+    // property for reset counter
+    Object.defineProperty(myCounter, "reset", {
+        get : function(){
+            this.counter = 0;
+        }
+    });
+
+    // property for increment counter
+    Object.defineProperty(myCounter, "increment", {
+        get : function(){
+            this.counter++;
+        }
+    });
+
+
+    // property for decrement counter
+    Object.defineProperty(myCounter, "decrement", {
+        get : function(){
+            this.counter--;
+        }
+    });
+
+    // property for add value counter
+    Object.defineProperty(myCounter, "add", {
+        set : function(value){
+            this.counter += value;
+        }
+    });
+
+    // property for less value counter
+    Object.defineProperty(myCounter, "less", {
+        set : function(value){
+            this.counter -= value;
+        }
+    });
+
+    document.write("<hr> Counter is "+myCounter.counter);
+    myCounter.increment;
+    myCounter.increment;
+    myCounter.increment;
+    myCounter.increment;
+    myCounter.increment;
+    document.write("<hr> Counter is "+myCounter.counter);
+    myCounter.reset;
+    document.write("<hr> Counter is "+myCounter.counter);
+    myCounter.add = 10;
+    document.write("<hr> Counter is "+myCounter.counter);
+    myCounter.decrement;
+    document.write("<hr> Counter is "+myCounter.counter);
+    myCounter.less = 5;
+    document.write("<hr> Counter is "+myCounter.counter);
+</script>

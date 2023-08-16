@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    // nested object
+
+    const student = {
+        fname : "Shruti",
+        lname : "Goswami",
+        city : "Rajkot",
+        age : 20,
+        education : "BCA",
+        set _fname(fname){
+            this.fname = fname;
+        },
+        get _fname(){
+            return this.fname;
+        },
+        set _city(city){
+            this.city = city.toUpperCase();
+        },
+        get _city(){
+            return this.city;
+        }
+    }
+
+    document.write(JSON.stringify(student));
+    student._fname = "Tarun";
+    student._city = "Ahamdabad";
+    document.write(JSON.stringify(student));
+    document.write("<hr>"+student._fname+" "+student._city);
+</script>
