@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    function Student(roll, fname, lname, city){
+        this.roll = roll;
+        this.fname = fname;
+        this.lname = lname;
+        this.city = city;
+    }
+
+    const student1 = new Student(111, "Mithilesh", "Yadav", "Rajkot");
+    const student2 = new Student(112, "Sagar", "Patodiya", "Rajkot");
+    const student3 = new Student(113, "Mehul", "Varu", "Rajkot");
+
+    document.write("<hr>"+JSON.stringify(student1));
+    document.write("<hr>"+JSON.stringify(student2));
+    document.write("<hr>"+JSON.stringify(student3));
+
+    //Student.language = "English";
+    Student.prototype.language = "English";
+
+    document.write("<hr> After Add new Property");
+    document.write("<hr>"+student1.language);
+    document.write("<hr>"+student2.language);
+    document.write("<hr>"+student3.language);
+</script>

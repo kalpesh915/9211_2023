@@ -6,33 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <button onclick="greetings()">Click Me</button>
+    <h1 id="op"></h1>
 </body>
 </html>
 
 <script>
-    function Student(roll, fname, lname, city){
-        this.roll = roll;
-        this.fname = fname;
-        this.lname = lname;
-        this.city = city;
-        this.state = "Gujarat";
-        this.language = "Gujarati";
-        this.printer = function(){
-            document.write("<hr> Roll No. "+this.roll+" Name is "+this.fname+" "+this.lname+" City "+this.city+" "+this.state+" Language is "+this.language);
-        }
+    function greetings(){
+        document.getElementById("op").innerHTML = "Welcome to world of Java Script";
     }
-
-    const student1 = new Student(111, "Mithilesh", "Yadav", "Rajkot");
-    const student2 = new Student(112, "Sagar", "Patodiya", "Rajkot");
-    const student3 = new Student(113, "Mehul", "Varu", "Rajkot");
-
-    student1.printer();
-    student2.printer();
-    student3.printer();
-    
-    student1.language = "Hindi";
-    student1.printer();
-    student2.printer();
-    student3.printer();
 </script>

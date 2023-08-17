@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let students = new Map([
+        [1, "Kartik"],
+        [2, "Mithiles"],
+        [3, "Sagar"],
+        [4, "Mehul"],
+        [5, "Shruti"],
+        [6, "Aayushi"],
+        [7, "Krishna"],
+        [8, "Bhoomi"],
+    ]);
+
+    document.write("<hr>"+students.size);
+    
+    document.write("<hr>Student Keys <hr>");
+    for(let x of students.keys()){
+        document.write(" "+x);
+    }
+
+    document.write("<hr>Student Values <hr>");
+    for(let x of students.values()){
+        document.write(" "+x);
+    }
+
+    document.write("<hr>Student Entries <hr>");
+    for(let x of students.entries()){
+        document.write(" "+x);
+    }
+</script>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let students = new Set(["Kartik", "Mithilesh", "Sagar", "Mehul", "Shruti", "Aayushi", "Krishna", "Bhoomi", "sagar"]);
+
+    document.write("<hr>"+students.size);
+    students.add("Dev");
+    document.write("<hr>"+students.size);
+    document.write("<hr>"+students.has("Shruti"));
+    students.delete("Shruti");
+    document.write("<hr>"+students.has("Shruti")+"<hr>");
+
+    students.forEach((tmp)=>{
+        document.write(" "+tmp);
+    });
+
+    students.clear();
+    document.write("<hr>"+students.size);
+</script>

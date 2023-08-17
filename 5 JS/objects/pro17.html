@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    function Student(roll, fname, lname, city){
+        this.roll = roll;
+        this.fname = fname;
+        this.lname = lname;
+        this.city = city;
+        this.state = "Gujarat";
+        this.language = "Gujarati";
+        this.printer = function(){
+            document.write("<hr> Roll No. "+this.roll+" Name is "+this.fname+" "+this.lname+" City "+this.city+" "+this.state+" Language is "+this.language);
+        }
+    }
+
+    const student1 = new Student(111, "Mithilesh", "Yadav", "Rajkot");
+    const student2 = new Student(112, "Sagar", "Patodiya", "Rajkot");
+    const student3 = new Student(113, "Mehul", "Varu", "Rajkot");
+
+    student1.printer();
+    student2.printer();
+    student3.printer();
+    
+</script>
