@@ -6,11 +6,27 @@
     <title>Document</title>
 </head>
 <body>
-
+    
 </body>
 </html>
 
 <script>
-    // fixed value
-    document.write(15 + 15);
+    let students = new Map([
+        [1, "Kartik"],
+        [2, "Mithiles"],
+        [3, "Sagar"],
+        [4, "Mehul"],
+        [5, "Shruti"],
+        [6, "Aayushi"],
+        [7, "Krishna"],
+        [8, "Bhoomi"],
+    ]);
+
+    document.write("<hr>"+students.size);
+    students.set([9, "Dev"]);
+    document.write("<hr>"+students.size);
+    document.write("<hr>"+students.has("Shruti"));
+    document.write("<hr>"+students.has(5));
+    students.delete(5);
+    document.write("<hr>"+students.has(5));
 </script>

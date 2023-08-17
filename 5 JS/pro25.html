@@ -6,27 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-
+    
 </body>
 </html>
 
 <script>
-    // without white space
-    
-    /*x=10;
-    y=10;
-    z=x+y;
-    document.write(z); */
+    let students = new Set(["Kartik", "Mithilesh", "Sagar", "Mehul", "Shruti", "Aayushi", "Krishna", "Bhoomi", "sagar"]);
 
-    x = 10;
-    y = 20;
-    z = x + y;
-    document.write(z);
+    document.write("<hr>Set Values : <hr>");
 
-    function msg(){
-        // indentation code
-        // code here
-        alert("Welcome");
+    for(let tmp of students.values()){
+        document.write(" "+tmp);
     }
-    
+
+    document.write("<hr>Set Keys : <hr>");
+
+    for(let tmp of students.keys()){
+        document.write(" "+tmp);
+    }
+
+    document.write("<hr>Set Entries : <hr>");
+
+    for(let tmp of students.entries()){
+        document.write(" "+tmp);
+    }
 </script>
