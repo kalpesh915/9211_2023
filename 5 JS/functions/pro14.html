@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    /*
+        normal arguments are passed by value
+    */
+
+   let ip = 10;
+   document.write("<hr> Before Function Call ip is "+ip);
+
+   function add10(ip){
+        // function have a local variable named ip
+        ip = ip + 10;
+        document.write("<hr> in Function Call ip is "+ip);
+   }
+
+   add10(ip);
+
+   document.write("<hr> After Function Call ip is "+ip);
+</script>

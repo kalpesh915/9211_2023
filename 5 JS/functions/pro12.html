@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    // function with rest parameters
+    function findSum(...ip){
+        let ans = 0;
+        for(let x of ip){
+            ans += x;
+        }
+
+        document.write(ans);
+    }
+
+
+    findSum(11, 11, 14, 35, 18,55, 44, 44, 33, 55); // 11, 15 arguments
+</script>
