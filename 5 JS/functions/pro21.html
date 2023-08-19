@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    
+    let Person1 = {
+        firstname : "Mehul",
+        lastname : "Varu",
+        fullname : function(){
+            alert("Welcome "+this.firstname+" "+this.lastname);
+        }
+    }
+
+    let Person2 = {
+        firstname : "Mithilesh",
+        lastname : "Yadav"
+    }
+
+    //Person1.fullname();
+    // generate a new function for calling object
+    const ans = Person1.fullname.bind(Person2);
+    //alert(ans);
+    ans();
+</script>

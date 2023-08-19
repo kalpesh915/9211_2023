@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="op"></h1>
+</body>
+</html>
+
+<script>
+    // function with GLobal variable
+    let count = 0; /// Global
+
+    function increment(){
+        let count = 0; // local
+        count++;
+    }
+
+    document.write("<hr> Count is "+count);
+    increment();
+    increment();
+    increment();
+    increment();
+    increment();
+    document.write("<hr> Count is "+count);
+    
+</script>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let Person = {
+        fullname : function(city, state){
+            alert("Welcome "+this.firstname+" "+this.lastname+" to "+city+" of "+state);
+        }
+    }
+
+    let Person1 = {
+        firstname : "Mehul",
+        lastname : "Varu"
+    }
+
+    let Person2 = {
+        firstname : "Mithilesh",
+        lastname : "Yadav"
+    }
+
+    let Person3 = {
+        firstname : "Sagar",
+        lastname : "Patodiya"
+    }
+
+    Person.fullname.call(Person1, "Ahamdabad", "Gujarat");
+    Person.fullname.call(Person2, "Rajkot", "Gujarat");
+    Person.fullname.call(Person3, "Surat", "Gujarat");
+</script>
