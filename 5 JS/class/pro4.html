@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    class Maths1{
+        sum(i, j){
+            document.write("<hr> Sum is "+(i + j));
+        }
+        sub(i, j){
+            document.write("<hr> Sub is "+(i - j));
+        }
+    }
+
+    class Maths2 extends Maths1{
+        div(i, j){
+            document.write("<hr> Div is "+(i / j));
+        }
+        mul(i, j){
+            document.write("<hr> Mul is "+(i * j));
+        }
+    }
+
+    class Maths3 extends Maths2{
+        mod(i, j){
+            document.write("<hr> Mod is "+(i % j));
+        }
+    }
+
+    const Calculation = new Maths3();
+
+    Calculation.sum(111, 22);
+    Calculation.sub(111, 22);
+    Calculation.mul(111, 22);
+    Calculation.div(111, 22);
+    Calculation.mod(111, 22);
+</script>

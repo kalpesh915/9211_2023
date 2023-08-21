@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    class Student{
+        constructor(fname, lname){
+            this.fname = fname;
+            this.lname = lname;
+        }
+
+        get _fname(){
+            return this.fname;
+        }
+
+        set _fname(fname){
+            this.fname = fname;
+        }
+    }
+
+    const std1 = new Student("Shruti", "Goswami");
+    document.write("<hr> Fname is "+std1._fname);
+    std1._fname = "SHRUTI";
+    document.write("<hr> Fname is "+std1._fname);
+</script>

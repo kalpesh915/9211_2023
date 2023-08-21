@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    "use strict";
+    class Student{
+        constructor(roll, fname, lname, city){
+            this.roll = roll;
+            this.fname = fname;
+            this.lname = lname;
+            this.city = city;
+
+            this.getData();
+        }
+
+        getData(){
+           document.write("<hr>Welcome "+this.fname+" "+this.lname+" to "+this.city+" Your Roll No. is "+this.roll);
+        }
+    }
+
+    const student1 = new Student(111, "Sagar", "Patodiya", "Rajkot");
+    const student2 = new Student(112, "Mehul", "Varu", "Rajkot");
+    const student3 = new Student(113, "Mithilesh", "Yadav", "Rajkot");
+</script>
