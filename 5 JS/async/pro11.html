@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="op"></h1>    
+</body>
+</html>
+
+<script>
+    function printer(value){
+        document.getElementById("op").innerHTML = value;
+    }
+
+    /// producing code
+    let myPromise = new Promise(function(resolve, reject){
+        const ip = parseInt(prompt("Enter any Number"));
+
+        if(ip >= 18){
+            resolve("Welcome to Promise Code");
+        }else{
+            reject("Error In Promise Code");
+        }
+    });
+    
+
+    /// consuming code
+    myPromise.then(function(success){
+        printer(success);
+    }, function(error){
+        printer(error);
+    });
+</script>
