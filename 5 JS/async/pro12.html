@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="op"></h1>    
+</body>
+</html>
+
+<script>
+    function printer(value){
+        document.getElementById("op").innerHTML = value;
+    }
+
+    /// producing code
+    let myPromise = new Promise(function(resolve, reject){
+        let age;
+        age = Number(prompt("Enter your Age "));
+
+        if(age >= 18){
+            resolve("Welcome for Voting");
+        }else{
+            reject("Invalid Age for Voting");
+        }
+    });
+
+    myPromise.then(function(message){
+        printer(message);
+    }, function(error){
+        printer(error);
+    });
+</script>

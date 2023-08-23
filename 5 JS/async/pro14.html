@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Wait for loading a File</h1>
+    <div id="op"></div>
+</body>
+</html>
+
+<script>
+    function printer(value){
+        document.getElementById("op").innerHTML = value;
+    }
+
+    /// producing code
+    let myPromise = new Promise(function(resolve, reject){
+        const XMLHttp = new XMLHttpRequest();
+        XMLHttp.open("GET", "https://dummyjson.com/products", true);
+
+        XMLHttp.onload = function(){
+            if(XMLHttp.status == 200){
+                resolve(XMLHttp.responseText);
+            }else{
+                reject("File Not Found");
+            }
+        }
+
+        XMLHttp.send();
+    });
+
+    myPromise.then(function(message){
+        printer(message);
+    }, function(error){
+        printer(error);
+    });
+</script>
