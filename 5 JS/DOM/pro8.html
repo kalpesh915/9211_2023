@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quisquam cumque reiciendis commodi adipisci. Maxime, reprehenderit illo placeat eos ipsum dolorem, alias earum officiis molestias obcaecati distinctio fugit corrupti corporis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quisquam cumque reiciendis commodi adipisci. Maxime, reprehenderit illo placeat eos ipsum dolorem, alias earum officiis molestias obcaecati distinctio fugit corrupti corporis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quisquam cumque reiciendis commodi adipisci. Maxime, reprehenderit illo placeat eos ipsum dolorem, alias earum officiis molestias obcaecati distinctio fugit corrupti corporis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quisquam cumque reiciendis commodi adipisci. Maxime, reprehenderit illo placeat eos ipsum dolorem, alias earum officiis molestias obcaecati distinctio fugit corrupti corporis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quisquam cumque reiciendis commodi adipisci. Maxime, reprehenderit illo placeat eos ipsum dolorem, alias earum officiis molestias obcaecati distinctio fugit corrupti corporis.</p>
+    <hr>
+    <button onclick="changeclr()">Change Font Color</button>
+    <button onclick="changefnt()">Change Font Size</button>
+</body>
+</html>
+
+<script>
+    const ptags = document.getElementsByTagName("p");
+
+    function changeclr(){
+        for(x=0; x<ptags.length; x++){
+            ptags[x].style.color = 'red';
+        }
+    }
+
+    function changefnt(){
+        size = 10;
+        for(x=0; x<ptags.length; x++){
+            ptags[x].style.fontSize = size+'px';
+            size += 10;
+        }
+    }
+</script>
