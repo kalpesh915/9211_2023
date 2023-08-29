@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .car{
+            height: 50px;
+            width: 100px;
+            position: relative;
+            left: 0px;
+        }
+
+        .date{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body onload="init()">
+    <hr>
+        <img src="car1.gif" class="car" id="car1">
+    <hr>
+    <hr>
+        <img src="car2.gif" class="car" id="car2">
+    <hr>
+    <button onclick="startRace()">Start Race</button>
+    <button onclick="pauseRace()">Pause Race</button>
+    <button onclick="resetGame()">Re strat Race</button>
+    Select Gear 1
+    <select onchange="changeGear(this.value)">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+    <div class="data">
+        <h1 id="op1"></h1>
+        <h1 id="op2"></h1>
+    </div>
+</body>
+</html>
+
+<script>
+    let car1, car2, op1, op2, animation = null, tmp, diff, gear = 1;
+
+    function init(){
+        car1 = document.getElementById("car1");
+        car2 = document.getElementById("car2");
+
+        op1 = document.getElementById("op1");
+        op2 = document.getElementById("op2");
+
+        car1.style.left = "0px";
+        car2.style.left = "0px";
+
+        op1.innerHTML = "Car 1 on 0 / 1500 Meters";
+        op2.innerHTML = "Car 2 on 0 / 1500 Meters";
+    }
+
+    function startRace(){
+        if(animation == null){
+            animation = setInterval(moveCar, 100);
+        }else{
+            alert("Race Already Started");
+        }
+    }
+
+    function moveCar(){
+        tmp = Math.ceil(Math.random() * (gear * 10));
+        car1.style.left = (parseInt(car1.style.left) + tmp)+"px";
+        op1.innerHTML = "Car 1 on "+parseInt(car1.style.left)+" / 1500 Meters";
+
+        if(parseInt(car1.style.left) >= 1500){
+            alert("Car 1 is Winner");
+            resetGame();
+        }
+
+        tmp = Math.ceil(Math.random() * (gear * 10));
+        car2.style.left = (parseInt(car2.style.left) + tmp)+"px";
+        op2.innerHTML = "Car 2 on "+parseInt(car2.style.left)+" / 1500 Meters";
+
+        if(parseInt(car2.style.left) >= 1500){
+            alert("Car 2 is Winner");
+            resetGame();
+        }
+    }
+
+    function resetGame(){
+        clearInterval(animation);
+        animation = null;
+
+        if(confirm("Do you want to play again ?")){
+            window.location.reload();
+        }else{
+            alert("Thanks for playing");
+        }
+    }
+
+    function pauseRace(){
+        if(animation == null){
+            alert("Game not Started");
+        }else{
+            clearInterval(animation);
+            animation = null;
+        }
+    }
+
+    function changeGear(value){
+        //alert(value);
+        gear = value;
+    }
+</script>

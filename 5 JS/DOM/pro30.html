@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="addNode()">Insert Before</button>
+    <div id="mydiv">
+        <p id="myp">Welcome</p>
+    </div>
+</body>
+</html>
+
+<script>
+    let mydiv = document.getElementById("mydiv");
+    let myp = document.getElementById("myp");
+
+    function addNode(){
+        let newp = document.createElement("p");
+        let text = "IANT Rajkot";
+        newp.append(text);
+
+        mydiv.insertBefore(newp, myp);
+    }
+</script>

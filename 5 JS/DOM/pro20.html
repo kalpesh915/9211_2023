@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            height: 600px;
+            width: 600px;
+            border: 1px solid black;
+            background-color: yellow;
+            position: relative;
+        }
+
+        .inner{
+            height: 50px;
+            width: 50px;
+            border: 1px solid black;
+            background-color: red;
+            position: absolute;
+        }
+    </style>
+</head>
+<body onload="init()">
+    <div class="outer">
+        <div class="inner" id="inner">
+
+        </div>
+    </div>
+    <button onclick="startAnimation()">Start Animation</button>
+</body>
+</html>
+
+<script>
+    let pos = 0;
+    const inner = document.getElementById("inner");
+    let myAnimation;
+
+    function init(){
+        inner.style.left = pos+"px";
+        inner.style.top = pos+"px";
+    }
+
+    function startAnimation(){
+        myAnimation = setInterval(move, 1000);
+    }
+
+    function move(){
+        pos += 50;
+
+        if(pos >= 600){
+            clearInterval(myAnimation);
+        }else{
+            inner.style.left = pos+"px";
+            inner.style.top = pos+"px";
+        }
+    }
+</script>

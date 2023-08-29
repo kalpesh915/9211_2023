@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+        <button onclick="increment()">++</button>
+        <button onclick="decrement()">--</button>
+    <hr>
+    <p id="op">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente unde, ea molestias voluptate eaque ducimus est laborum veniam corporis recusandae corrupti harum cum, id nobis, laboriosam ratione officia? Ex, eveniet.</p>
+</body>
+</html>
+
+<script>
+    count = 10;
+    let op = document.getElementById("op");
+
+    function increment(){
+        count += 10;
+        op.style.fontSize = count+"px";
+    }
+
+    function decrement(){
+        count -= 10;
+        op.style.fontSize = count+"px";
+    }
+</script>

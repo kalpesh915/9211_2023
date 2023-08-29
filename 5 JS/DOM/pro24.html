@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="divtag">
+        <p id="ptag">This is P Tag</p>
+    </div>
+</body>
+</html>
+
+<script>
+    function clickDiv(){
+        alert("Clicked on Div");
+    }
+
+    function clickP(){
+        alert("Clicked on P");
+    }
+
+    document.getElementById("divtag").addEventListener("click", clickDiv);
+    document.getElementById("ptag").addEventListener("click", clickP);
+</script>
