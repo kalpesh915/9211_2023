@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onresize="getSize()">
+    <div id="op">
+
+    </div>
+</body>
+</html>
+
+<script>
+    function getSize(){
+        let answer = "<hr> Height is "+window.innerHeight+" Width is "+window.innerWidth+"<hr>";
+
+        document.getElementById("op").innerHTML = answer;
+    }
+</script>
