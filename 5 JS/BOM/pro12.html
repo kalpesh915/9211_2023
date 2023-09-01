@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cookies</h1>
+    <button onclick="createCookie()">Create Cookie</button>
+    <button onclick="updateCookie()">Update Cookies</button>
+</body>
+</html>
+
+<script>
+    function createCookie(){
+        //alert("Called");
+        document.cookie = "username = 'mithilesh Yadav'; SameSite=Strict; expires= 31 Dec 2023 12:00:00 UTC;" ; 
+        alert("Cookies Created");
+    }
+
+    function updateCookie(){
+        let username = prompt("Enter your name");
+        document.cookie = "username = "+username+"; SameSite=Strict; expires= 31 Dec 2023 12:00:00 UTC;" ; 
+        alert("Cookies Updated");
+    }
+</script>
