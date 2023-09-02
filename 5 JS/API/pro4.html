@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="number" id="age" required min="0" max="100" step="5">
+        <input type="button" value="Send Now" onclick="validate()">
+    </form>
+    <p id="op"></p>
+</body>
+</html>
+
+<script>
+    function validate(){
+        let age = document.getElementById("age");
+
+        if(age.validity.rangeOverflow){
+            document.getElementById("op").innerHTML = "Over Flow of Age";
+        }
+        else if(age.validity.rangeUnderflow){
+            document.getElementById("op").innerHTML = "Under Flow of Age";
+        }
+        else if(age.validity.stepMismatch){
+            document.getElementById("op").innerHTML = "Step mis Matched";
+        }
+    }
+</script>
