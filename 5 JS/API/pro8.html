@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="op">Get Data From API</p>
+    <button onclick="startWork()">Fetch Data From API</button>
+</body>
+</html>
+
+<script>
+    const op = document.getElementById("op");
+
+    function startWork(){
+        fetch("https://dummyjson.com/products").then((response)=>{
+            response.json().then((result)=>{
+                //alert(result);
+                op.innerHTML = JSON.stringify(result);
+            });
+        });
+    }
+</script>
