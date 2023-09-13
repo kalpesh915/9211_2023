@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim atque doloremque nulla labore tenetur porro ad repudiandae facere voluptatibus quisquam saepe, quaerat quasi dolore, cum blanditiis vero debitis earum. Dolorum.</p>
+    <button onclick="getData()">Click Me</button>
+    <div id="op"></div>
+</body>
+</html>
+
+<script>
+    function getData(){
+        /// XMLHTTPRequest Object
+        const XMLHttp = new XMLHttpRequest();
+
+        /// function for response
+        XMLHttp.onload = function(){
+            document.getElementById("op").innerHTML = XMLHttp.responseText;
+        }
+
+        /// generate request and send
+        XMLHttp.open("GET", "data.txt", true);
+        XMLHttp.send();
+    }
+</script>
