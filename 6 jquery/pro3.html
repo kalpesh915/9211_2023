@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <button id="btn1">Hide</button>
+    <p id="op">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quo, sequi explicabo consequatur libero tempore inventore est aspernatur sed voluptates vel minus nam cumque nostrum, exercitationem dolorum? Magnam, corporis dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, magni distinctio. Molestiae excepturi sunt ipsam quae, quaerat ex neque ad quasi dolorem fugiat, quos magni eaque nam esse id perspiciatis.</p>
+</body>
+</html>
+
+<script>
+    // $ is known as JQuery
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $(this).hide(5000);
+        });
+    });
+</script>

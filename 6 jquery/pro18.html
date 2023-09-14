@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+        .demo{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Enter your name" id="ip1">
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("#ip1").focus(function(){
+            $(this).css("color", "red");
+        });
+        $("#ip1").blur(function(){
+            $(this).css("color", "yellow");
+        });
+
+        $("#ip1").mousedown(function(){
+            $(this).css("border", "10px solid red");
+        });
+
+        $("#ip1").mouseup(function(){
+            $(this).css("border", "10px solid purple");
+        });
+    });
+</script>
