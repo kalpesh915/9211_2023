@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-color.js"></script>
+    <style>
+        #data{
+            background-color: yellow;
+            color: red;
+            padding: 10px;
+            width: 300px;
+            position: relative;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+        <button id="btn1">Animate</button>
+    <hr>
+    <p id="data">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, iure. Veniam ducimus excepturi itaque, aliquam praesentium libero ad consequatur in, voluptatibus minus iste enim eos impedit maxime voluptatum magnam saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nulla maiores accusamus sint debitis voluptatum facilis velit tempore doloremque praesentium assumenda doloribus iusto facere placeat reprehenderit, quas eligendi ipsa? Quibusdam.
+    </p>
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("#data").animate({
+                "height":"toggle", 
+                "opacity":"toggle",
+                "color":"yellow", 
+                "backgroundColor":"red"
+            }, 2000);
+        });
+    });
+</script>

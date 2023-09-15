@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-color.js"></script>
+    <style>
+        #data{
+            background-color: yellow;
+            color: red;
+            padding: 10px;
+            width: 300px;
+            position: relative;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+        <button id="btn1">Animate</button>
+    <hr>
+    <p id="data">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptas at esse, nulla molestiae nihil a ea magni dolores distinctio corporis, cumque eius. Repellendus explicabo sed asperiores quam rem nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias sed voluptatem, vitae ducimus accusantium excepturi delectus aliquid, numquam illum et illo aspernatur magni quia doloribus expedita. Accusamus labore praesentium quibusdam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero dignissimos dicta dolores vitae excepturi, similique facere quos voluptatibus. Officiis blanditiis dignissimos consectetur neque rem alias natus illo deleniti aliquam est.
+    </p>
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("#data").hide(2000)
+            .show(1000)
+            .fadeOut(3000)
+            .fadeIn(2000)
+            .slideUp(5000)
+            .slideDown(1000)
+            .css("width","800px")
+            .animate({"left":"200px"},2000)
+        });
+    });
+</script>

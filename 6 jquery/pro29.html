@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-color.js"></script>
+    <style>
+        #data{
+            background-color: yellow;
+            color: red;
+            padding: 10px;
+            width: 300px;
+            position: relative;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+        <button id="btn1">Animate</button>
+    <hr>
+    <p id="data">
+        Welcome
+    </p>
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            let ptag = $("#data");
+
+            ptag.animate({"width":"500px"}, 2000);
+            ptag.animate({"left":"500px"}, 1000);
+            ptag.animate({"fontSize":"50px"}, 3000);
+            ptag.css("textAlign","center", 1000);
+        });
+    });
+</script>

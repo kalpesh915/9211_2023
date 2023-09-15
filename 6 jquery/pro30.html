@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-color.js"></script>
+    <style>
+        #data{
+            background-color: yellow;
+            color: red;
+            padding: 10px;
+            width: 300px;
+            position: relative;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+        <button id="btn1">Animate</button>
+        <button id="btn2">Animate Stop</button>
+    <hr>
+    <p id="data">
+        Welcome
+    </p>
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("#data").animate({"width":"1000px"}, 5000);
+        });
+
+        $("#btn2").click(function(){
+            $("#data").stop();
+        });
+    });
+</script>
