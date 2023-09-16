@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-color.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <hr>
+        <button id="btn1">Set Val</button>
+        <button id="btn2">Get Val</button>
+    <hr>
+    <input type="text" id="fname" placeholder="Enter First Name">
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("#fname").val("This is Sample Text");
+        });
+        $("#btn2").click(function(){
+            alert($("#fname").val());
+        });
+    });
+</script>

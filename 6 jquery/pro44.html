@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-color.js"></script>
+    <style>
+        .style1{
+            background-color: yellow;
+            color: red;
+            padding: 20px;
+        }
+
+        .style2{
+            text-align: center;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+        <button id="btn1">Add Class</button>
+        <button id="btn2">Remove Class</button>
+        <button id="btn3">Toggle Class</button>
+    <hr>
+    <p id="data">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsa blanditiis at obcaecati perferendis quam omnis laboriosam inventore fugiat, aliquid sapiente quisquam in illo ad quia ea similique quos velit!</p>
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("#data").addClass("style1 style2");
+        });
+
+        $("#btn2").click(function(){
+            $("#data").removeClass("style1");
+        });
+
+        $("#btn3").click(function(){
+            $("#data").toggleClass("style1  style2");
+        });
+    });
+</script>

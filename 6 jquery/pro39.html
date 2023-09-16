@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-color.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <hr>
+        <button id="btn1">Prepend</button>
+        <button id="btn2">Append</button>
+    <hr>
+    <p id="data">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsa blanditiis at obcaecati perferendis quam omnis laboriosam inventore fugiat, aliquid sapiente quisquam in illo ad quia ea similique quos velit!</p>
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("#data").prepend(" Welcome ");
+        });
+
+        $("#btn2").click(function(){
+            $("#data").append(" Data Appended ");
+        });
+    });
+</script>
