@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-color.js"></script>
+    <style>
+        .container *{
+            border: 1px solid gray;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, recusandae reiciendis necessitatibus commodi quasi possimus? Voluptas necessitatibus omnis dicta! Quidem repudiandae officia sunt consequatur commodi animi expedita vero nemo quis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, recusandae reiciendis necessitatibus commodi quasi possimus? Voluptas necessitatibus omnis dicta! Quidem repudiandae officia sunt consequatur commodi animi expedita vero nemo quis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, recusandae reiciendis necessitatibus commodi quasi possimus? Voluptas necessitatibus omnis dicta! Quidem repudiandae officia sunt consequatur commodi animi expedita vero nemo quis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, recusandae reiciendis necessitatibus commodi quasi possimus? Voluptas necessitatibus omnis dicta! Quidem repudiandae officia sunt consequatur commodi animi expedita vero nemo quis!</p>
+    <p class="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, recusandae reiciendis necessitatibus commodi quasi possimus? Voluptas necessitatibus omnis dicta! Quidem repudiandae officia sunt consequatur commodi animi expedita vero nemo quis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, recusandae reiciendis necessitatibus commodi quasi possimus? Voluptas necessitatibus omnis dicta! Quidem repudiandae officia sunt consequatur commodi animi expedita vero nemo quis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, recusandae reiciendis necessitatibus commodi quasi possimus? Voluptas necessitatibus omnis dicta! Quidem repudiandae officia sunt consequatur commodi animi expedita vero nemo quis!</p>
+    <p class="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, recusandae reiciendis necessitatibus commodi quasi possimus? Voluptas necessitatibus omnis dicta! Quidem repudiandae officia sunt consequatur commodi animi expedita vero nemo quis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, recusandae reiciendis necessitatibus commodi quasi possimus? Voluptas necessitatibus omnis dicta! Quidem repudiandae officia sunt consequatur commodi animi expedita vero nemo quis!</p>
+    <p class="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, recusandae reiciendis necessitatibus commodi quasi possimus? Voluptas necessitatibus omnis dicta! Quidem repudiandae officia sunt consequatur commodi animi expedita vero nemo quis!</p>
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("p").filter(".demo").css("color", "red");
+    });
+</script>

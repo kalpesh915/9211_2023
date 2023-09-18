@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-color.js"></script>
+    <style>
+        .container *{
+            border: 1px solid gray;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is heading 1</h1>
+    <h2>This is heading 1</h2>
+    <h3>This is heading 1</h3>
+    <h4>This is heading 1</h4>
+    <h5>This is heading 1</h5>
+    <h6>This is heading 1</h6>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis animi reiciendis quia consequatur quasi dicta a optio neque ratione? Ullam nobis officiis aperiam, praesentium numquam quod dolore harum quo itaque?</p>
+    <span>This is Span Tag</span>
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("p").prev().css("color", "red");
+    });
+</script>
