@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-color.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <input type="search" id="searchText" placeholder="Search here..."  class="form-control my-3">
+    <hr>
+    <table class="table table-hover table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>Roll</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>City</th>
+            </tr>
+        </thead>
+
+        <tbody id="data">
+            <tr>
+                <td>1</td>
+                <td>Krishna</td>
+                <td>Goletar</td>
+                <td>Rajkot</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>mehul</td>
+                <td>varu</td>
+                <td>Rajkot</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Bhoomi</td>
+                <td>Patel</td>
+                <td>Rajkot</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Mithilesh</td>
+                <td>Yadav</td>
+                <td>Rajkot</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>Sagar</td>
+                <td>Patodiya</td>
+                <td>Rajkot</td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <td>Vachhani</td>
+                <td>Dev</td>
+                <td>Rajkot</td>
+            </tr>
+
+            <tr>
+                <td>7</td>
+                <td>Shruti</td>
+                <td>Goswami</td>
+                <td>Rajkot</td>
+            </tr>
+
+            <tr>
+                <td>8</td>
+                <td>Kartik</td>
+                <td>Dave</td>
+                <td>Rajkot</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+<script>
+    $.noConflict();
+    jQuery(document).ready(function($){
+        $("#searchText").keyup(function(){
+            let searchText = $(this).val().toLowerCase();
+            //alert(searchText);
+            $("#data tr").filter(function(){
+                $(this).toggle($(this).text().toLowerCase().indexOf(searchText) > -1);
+            });   
+        });
+    });
+</script>
